@@ -3,3 +3,35 @@
 * {
     font-family: "Poppins", sans-serif;
 }
+
+nav.scrolled {
+    box-shadow: 0 -25px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media(max-width:1024px) {
+
+    .activeNavBar .menu-icon span:first-child {
+        transform: rotate(44deg);
+        transform-origin: left;
+        transition: all 200ms linear;
+    }
+
+    .activeNavBar .menu-icon span:nth-child(2) {
+        display: none;
+        pointer-events: none;
+    }
+
+    .activeNavBar .menu-icon span:last-child {
+        transform: rotate(-43deg);
+        transform-origin: left;
+        transition: all 200ms linear;
+    }
+
+    .activeNavBar .menu-icon {
+        height: 35px;
+    }
+
+    .menu-list.show {
+        right: 0;
+    }
+}
