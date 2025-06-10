@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Shiba</title>
+    <script src="./Saint Shiba_files/browser@4"></script><style>/*! tailwindcss v4.1.8 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --radius-xl: 0.75rem;
+    --radius-3xl: 1.5rem;
+    --blur-2xl: 40px;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji');
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type='button'], [type='reset'], [type='submit']), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden='until-found'])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .-top-\[125px\] {
+    top: calc(125px * -1);
+  }
+  .right-\[-8\%\] {
+    right: -8%;
+  }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
+  .mx-\[-12px\] {
+    margin-inline: -12px;
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-\[32px\] {
+    margin-top: 32px;
+  }
+  .mt-\[50px\] {
+    margin-top: 50px;
+  }
+  .mt-\[150px\] {
+    margin-top: 150px;
+  }
+  .mr-6 {
+    margin-right: calc(var(--spacing) * 6);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
+  }
+  .mb-\[26px\] {
+    margin-bottom: 26px;
+  }
+  .mb-\[32px\] {
+    margin-bottom: 32px;
+  }
+  .ml-6 {
+    margin-left: calc(var(--spacing) * 6);
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .size-\[50px\] {
+    width: 50px;
+    height: 50px;
+  }
+  .size-\[71px\] {
+    width: 71px;
+    height: 71px;
+  }
+  .h-\[60px\] {
+    height: 60px;
+  }
+  .h-\[350px\] {
+    height: 350px;
+  }
+  .w-1\/2 {
+    width: calc(1/2 * 100%);
+  }
+  .w-\[55\%\] {
+    width: 55%;
+  }
+  .w-\[1320px\] {
+    width: 1320px;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-\[150px\] {
+    max-width: 150px;
+  }
+  .max-w-\[660px\] {
+    max-width: 660px;
+  }
+  .max-w-\[1320px\] {
+    max-width: 1320px;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
+  .gap-\[23px\] {
+    gap: 23px;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
+  .rounded-\[4px\] {
+    border-radius: 4px;
+  }
+  .rounded-\[10px\] {
+    border-radius: 10px;
+  }
+  .rounded-\[43px\] {
+    border-radius: 43px;
+  }
+  .rounded-\[50\%\] {
+    border-radius: 50%;
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .rounded-t-\[10px\] {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .rounded-b-\[10px\] {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-x {
+    border-inline-style: var(--tw-border-style);
+    border-inline-width: 1px;
+  }
+  .border-t-\[1px\] {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-\[\#393838\] {
+    border-color: #393838;
+  }
+  .border-\[\#434242\] {
+    border-color: #434242;
+  }
+  .border-\[\#454545\] {
+    border-color: #454545;
+  }
+  .bg-\[\#00B2FF\] {
+    background-color: #00B2FF;
+  }
+  .bg-\[\#00E396\] {
+    background-color: #00E396;
+  }
+  .bg-\[\#1D1A1A\] {
+    background-color: #1D1A1A;
+  }
+  .bg-\[\#8B35E2\] {
+    background-color: #8B35E2;
+  }
+  .bg-\[\#080402\] {
+    background-color: #080402;
+  }
+  .bg-\[\#151313\] {
+    background-color: #151313;
+  }
+  .bg-\[\#F06500\] {
+    background-color: #F06500;
+  }
+  .bg-\[\#FF4560\] {
+    background-color: #FF4560;
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .bg-gradient-to-r {
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-\[linear-gradient\(94\.88deg\,rgba\(255\,255\,255\,0\.1\)_0\.97\%\,rgba\(255\,255\,255\,0\)_103\.14\%\)\] {
+    background-image: linear-gradient(94.88deg,rgba(255,255,255,0.1) 0.97%,rgba(255,255,255,0) 103.14%);
+  }
+  .bg-\[url\(assets\/images\/png\/bg-img-body\.png\)\] {
+    background-image: url(assets/images/png/bg-img-body.png);
+  }
+  .bg-\[url\(assets\/images\/png\/header-bg-img\.png\)\] {
+    background-image: url(assets/images/png/header-bg-img.png);
+  }
+  .from-\[\#FFA800\] {
+    --tw-gradient-from: #FFA800;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-\[\#F06500\] {
+    --tw-gradient-to: #F06500;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .p-\[67px\] {
+    padding: 67px;
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-\[23px\] {
+    padding-inline: 23px;
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-\[88px\] {
+    padding-block: 88px;
+  }
+  .pt-\[62px\] {
+    padding-top: 62px;
+  }
+  .pt-\[300px\] {
+    padding-top: 300px;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
+  .text-\[22px\] {
+    font-size: 22px;
+  }
+  .text-\[28px\] {
+    font-size: 28px;
+  }
+  .text-\[48px\] {
+    font-size: 48px;
+  }
+  .text-\[96px\] {
+    font-size: 96px;
+  }
+  .leading-\[\.99\] {
+    --tw-leading: .99;
+    line-height: .99;
+  }
+  .leading-\[1\.5\] {
+    --tw-leading: 1.5;
+    line-height: 1.5;
+  }
+  .leading-\[1\.8\] {
+    --tw-leading: 1.8;
+    line-height: 1.8;
+  }
+  .leading-\[1\.28\] {
+    --tw-leading: 1.28;
+    line-height: 1.28;
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .text-\[\#B6B5B5\] {
+    color: #B6B5B5;
+  }
+  .text-\[\#B8B8B8\] {
+    color: #B8B8B8;
+  }
+  .text-\[\#B9B8B8\] {
+    color: #B9B8B8;
+  }
+  .text-\[\#BBBABA\] {
+    color: #BBBABA;
+  }
+  .text-\[white\] {
+    color: white;
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .backdrop-blur-2xl {
+    --tw-backdrop-blur: blur(var(--blur-2xl));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-blur-\[32px\] {
+    --tw-backdrop-blur: blur(32px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-100 {
+    --tw-duration: 100ms;
+    transition-duration: 100ms;
+  }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .group-hover\:bg-\[linear-gradient\(90deg\,_\#FFA800_0\%\,_\#F06500_100\%\)\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-image: linear-gradient(90deg, #FFA800 0%, #F06500 100%);
+      }
+    }
+  }
+  .group-hover\:text-white {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
+  .hover\:bg-\[\#0C0B0B\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #0C0B0B;
+      }
+    }
+  }
+  .hover\:text-\[\#F06500\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #F06500;
+      }
+    }
+  }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
+    }
+  }
+}
+</style>
+    <link rel="stylesheet" href="./Saint Shiba_files/style.css">
+</head>
+
+<body class="bg-[url(assets/images/png/bg-img-body.png)] bg-no-repeat bg-cover bg-center">
+
+    <!-- nav -->
+    <nav class="w-full bg-[#080402] p-5">
+        <div class="container mx-auto px-3  ">
+            <div class="flex items-center justify-between">
+                <div class="flex ">
+                    <a href="http://127.0.0.1:5500/index.html"><img src="./Saint Shiba_files/logo.svg" alt="image"></a>
+                </div>
+                <div class="flex items-center">
+
+                    <div class="gap-8 flex">
+                        <a href="http://127.0.0.1:5500/index.html" class="text-white font-normal text-lg">Home</a>
+                        <a href="http://127.0.0.1:5500/index.html" class="text-white font-normal text-lg">About</a>
+                        <a href="http://127.0.0.1:5500/index.html" class="text-white font-normal text-lg">Tokenomics</a>
+                        <a href="http://127.0.0.1:5500/index.html" class="text-white font-normal text-lg">How to buy</a>
+                        <a href="http://127.0.0.1:5500/index.html" class="text-white font-normal text-lg">FAQ</a>
+                    </div>
+                    <button class="text-white cursor-pointer font-semibold  ml-6 text-lg px-[23px] py-2 bg-gradient-to-r from-[#FFA800] to-[#F06500] rounded-3xl">Connect
+                        Wallet</button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- header -->
+    <header class="bg-[url(assets/images/png/header-bg-img.png)] bg-no-repeat bg-cover bg-center">
+        <div class="container mx-auto px-3">
+            <div class="flex-wrap flex mx-[-12px]">
+                <div class="w-1/2 mt-[150px]">
+                    <h2 class="text-white font-bold text-[96px] leading-[.99]">Accumsan ut orci vitae</h2>
+                    <p class="font-normal text-[22px] text-white">Velit eget sit nibh fringilla risus ullamcorper
+                        malesuada. Morbi nulla suscipit dolor, volutpat quam at urna donec
+                        rutrum. In vulputate congue arcu in et.</p>
+                    <button class="text-white cursor-pointer font-semibold mt-[50px] text-lg px-[23px] py-2 bg-gradient-to-r from-[#FFA800] to-[#F06500] rounded-3xl">Connect
+                        Wallet</button>
+                </div>
+                <div class="w-1/2 ">
+                    <img src="./Saint Shiba_files/header-img.png" alt="image" class="w-full cursor-pointer">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- section2 -->
+    <section>
+        <div class="container mx-auto px-3 relative max-w-[1320px]">
+            <div class="p-6 border-[#454545] border rounded-xl backdrop-blur-2xl absolute  -top-[125px]">
+                <p class="font-semibold text-[48px] text-white">Cursus ligula habitant sed integer.</p>
+                <p class="font-normal text-lg text-[#B8B8B8] mt-6 leading-[1.8] ">Urna, dictum volutpat augue tortor.
+                    Fermentum
+                    vulputate convallis viverra facilisis. Aliquam
+                    porttitor sem rhoncus
+                    rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed. Cursus
+                    donec porttitor fames
+                    tellus. At ut donec nec aliquet ipsum leo tellus amet lacus. Varius mi urna blandit id magna tellus
+                    imperdiet tortor.
+                    Volutpat nec vulputate diam tristique facilisi in turpis vel elit.</p>
+                <p class="font-normal text-lg text-[#B8B8B8] mt-4">Urna, dictum volutpat augue tortor. Fermentum
+                    vulputate convallis viverra facilisis. Aliquam
+                    porttitor sem rhoncus
+                    rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed. Cursus
+                    donec porttitor
+                    fames
+                    tellus. At ut donec nec aliquet ipsum leo tellus amet lacus. Varius mi urna blandit id magna tellus
+                    imperdiet
+                    tortor.
+                    Volutpat nec vulputate diam tristique facilisi in turpis vel elit.</p>
+            </div>
+            <div class="flex flex-wrap mx-[-12px] pt-[300px]">
+                <div class="w-1/2 flex flex-col justify-center max-w-[660px]">
+                    <h2 class="font-semibold text-[48px] text-white">Cursus ligula habitant sed integer.</h2>
+                    <p class="font-normal text-lg text-[#B8B8B8] mt-6">Urna, dictum volutpat augue tortor. Fermentum
+                        vulputate convallis viverra facilisis. Aliquam porttitor sem rhoncus
+                        rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed.
+                        Cursus donec porttitor fames
+                        tellus.</p>
+                    <button class="text-white  max-w-[150px] cursor-pointer font-semibold mt-[32px] text-lg px-[23px] py-2 bg-gradient-to-r from-[#FFA800] to-[#F06500] rounded-3xl ">Learn
+                        more
+                    </button>
+                </div>
+                <div class="w-1/2">
+                    <img src="./Saint Shiba_files/section2-img.png" alt="image" class="w-full cursor-pointer">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- section3 -->
+    <section class="bg-[#1D1A1A] py-[88px] relative overflow-hidden">
+        <div class="container mx-auto px-3 ">
+            <div class="flex flex-wrap mx-[-12px]">
+                <div class="w-1/2 flex flex-col">
+                    <div>
+                        <p class="font-semibold text-[48px] leading-[1.28] text-white mb-6">
+                            How to Buy
+                        </p>
+                        <p class="font-normal text-[18px] leading-[1.8] text-[#BBBABA] mb-12">
+                            Urna, dictum volutpat augue tortor. Fermentum vulputate convallis viverra facilisis. Aliquam
+                            porttitor sem rhoncus
+                            rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed.
+                            Cursus donec porttitor fames
+                            tellus.
+                        </p>
+                        <div>
+                            <div class="flex bg-[#151313] px-2 py-3 rounded-[43px] mb-4 cursor-pointer  hover:bg-[#0C0B0B] transition-all duration-200 group">
+                                <div class="size-[71px] flex items-center justify-center mr-6 bg-white rounded-[50%] group-hover:bg-[linear-gradient(90deg,_#FFA800_0%,_#F06500_100%)] transition-colors duration-300">
+                                    <p class="font-semibold text-[22px] leading-[1.5] group-hover:text-white transition-colors duration-100">
+                                        1
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-[22px] leading-[1.5] text-white">
+                                        Cras nunc libero ac
+                                    </p>
+                                    <p class="font-normal text-[18px] leading-[1.8] text-[#B6B5B5]">
+                                        Amet, integer et ultrices non viverra dolor dui
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex bg-[#151313] px-2 py-3 rounded-[43px] mb-4 cursor-pointer  hover:bg-[#0C0B0B] transition-all duration-200 group">
+                                <div class="size-[71px] flex items-center justify-center mr-6 bg-white rounded-[50%] group-hover:bg-[linear-gradient(90deg,_#FFA800_0%,_#F06500_100%)] transition-colors duration-300">
+                                    <p class="font-semibold text-[22px] leading-[1.5] group-hover:text-white transition-colors duration-100">
+                                        2
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-[22px] leading-[1.5] text-white">
+                                        Cras nunc libero ac
+                                    </p>
+                                    <p class="font-normal text-[18px] leading-[1.8] text-[#B6B5B5]">
+                                        Amet, integer et ultrices non viverra dolor dui
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex bg-[#151313] px-2 py-3 rounded-[43px] cursor-pointer  hover:bg-[#0C0B0B] transition-all duration-200 group">
+                                <div class="size-[71px] flex items-center justify-center mr-6 bg-white rounded-[50%] group-hover:bg-[linear-gradient(90deg,_#FFA800_0%,_#F06500_100%)] transition-colors duration-300">
+                                    <p class="font-semibold text-[22px] leading-[1.5] group-hover:text-white transition-colors duration-100">
+                                        3
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-[22px] leading-[1.5] text-white">
+                                        Cras nunc libero ac
+                                    </p>
+                                    <p class="font-normal text-[18px] leading-[1.8] text-[#B6B5B5]">
+                                        Amet, integer et ultrices non viverra dolor dui
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/2 flex items-center">
+                    <img src="./Saint Shiba_files/section3-img.png" alt="image " class="w-[55%] absolute right-[-8%]">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section4 -->
+    <section class="pt-[62px]">
+        <div class="container mx-auto px-3">
+            <h2 class="font-semibold text-[48px] text-center text-white mb-[32px]">Tokenomics</h2>
+            <div class="grid grid-cols-3 gap-[23px] mb-[26px]">
+                <div class="px-5 py-4  cursor-pointer backdrop-blur-[32px] border border-[#434242] rounded-[10px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)]">
+                    <p class="font-normal text-[22px] text-white mb-4">Liquidity</p>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8]">When Buying</p>
+                            <p class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                3-5%</p>
+                        </div>
+                        <div>
+                            <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8]">When Selling</p>
+                            <p class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                3-5%</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="px-5 py-4  cursor-pointer backdrop-blur-[32px] border border-[#434242] rounded-[10px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)]">
+                    <p class="font-normal text-[22px] text-white mb-4">Marketing</p>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8]">When Buying</p>
+                            <p class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                3-5%</p>
+                        </div>
+                        <div>
+                            <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8]">When Selling</p>
+                            <p class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                3-5%</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="px-5 py-4  cursor-pointer backdrop-blur-[32px] border border-[#434242] rounded-[10px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)]">
+                    <p class="font-normal text-[22px] text-white mb-4">Rewards</p>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8]">When Buying</p>
+                            <p class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                3-5%</p>
+                        </div>
+                        <div>
+                            <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8]">When Selling</p>
+                            <p class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                3-5%</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-[67px] border-t-[1px] border-x border-[#393838] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)] rounded-t-[10px]">
+                <div class="grid grid-cols-3 gap-5">
+                    <img src="./Saint Shiba_files/pie chart .svg" alt="image" class="cursor-pointer">
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="flex items-center mb-4">
+                            <div class="size-[50px] rounded-[4px] bg-[#00E396] cursor-pointer "></div>
+                            <p class="font-semibold text-[18px] text-white ml-6 ">Sed sem</p>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="size-[50px] rounded-[4px] bg-[#F06500] cursor-pointer "></div>
+                            <p class="font-semibold text-[18px] text-white ml-6">Sed sem</p>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="size-[50px] rounded-[4px] bg-[#8B35E2] cursor-pointer"></div>
+                            <p class="font-semibold text-[18px] text-white ml-6">Sed sem</p>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="size-[50px] rounded-[4px] bg-[#00B2FF] cursor-pointer"></div>
+                            <p class="font-semibold text-[18px] text-white ml-6">Sed sem</p>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="size-[50px] rounded-[4px] bg-[#00E396]  cursor-pointer"></div>
+                            <p class="font-semibold text-[18px] text-white ml-6">Sed sem</p>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="size-[50px] rounded-[4px] bg-[#FF4560]  cursor-pointer"></div>
+                            <p class="font-semibold text-[18px] text-white ml-6">Sed sem</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Saint Shiba_files/section4-img.png" alt="image" class="cursor-pointer">
+                    </div>
+                </div>
+
+            </div>
+            <table class="w-[1320px]">
+                <thead class="h-[60px]">
+                    <tr>
+                        <td></td>
+                        <td class="font-semibold text-[18px] text-white text-center">Token</td>
+                        <td class="font-semibold text-[18px] text-white text-center">Percentage</td>
+                        <td class="font-semibold text-[18px] text-white text-center">Token Price</td>
+                        <td class="font-semibold text-[18px] text-white text-center">Token Price</td>
+                        <td class="font-semibold text-[18px] text-white text-center">Total Amount</td>
+                    </tr>
+                </thead>
+                <tbody class="h-[350px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)] border-b border-[#393838] border-x rounded-b-[10px]">
+                    <tr>
+                        <td class="font-normal text-lg text-[white] text-center">Seddigq</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">1,00,000</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">58.3</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">10% Monthly</td>
+                    </tr>
+                    <tr>
+                        <td class="font-normal text-lg text-[white] text-center">Seddigq</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">1,00,000</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">58.3</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">10% Monthly</td>
+                    </tr>
+                    <tr>
+                        <td class="font-normal text-lg text-[white] text-center">Seddigq</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">1,00,000</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">58.3</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">10% Monthly</td>
+                    </tr>
+                    <tr>
+                        <td class="font-normal text-lg text-[white] text-center">Seddigq</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">1,00,000</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">58.3</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">10% Monthly</td>
+                    </tr>
+                    <tr>
+                        <td class="font-normal text-lg text-[white] text-center">Seddigq</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">1,00,000</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">58.3</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">10% Monthly</td>
+                    </tr>
+                    <tr>
+                        <td class="font-normal text-lg text-[white] text-center">Seddigq</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">1,00,000</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">58.3</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                        <td class="text-[#B8B8B8] ont-normal text-lg text-center">10% Monthly</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+    <script src="./Saint Shiba_files/script.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

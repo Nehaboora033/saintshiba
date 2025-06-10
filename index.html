@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="h-screen bg-[url(assets/images/png/bg-img-body.png)] bg-no-repeat bg-cover bg-center">
+<body class="bg-[url(assets/images/png/bg-img-body.png)] bg-no-repeat bg-cover bg-center">
 
     <!-- nav -->
     <nav class="w-full bg-[#080402] p-5">
@@ -38,7 +38,7 @@
     <!-- header -->
     <header class="bg-[url(assets/images/png/header-bg-img.png)] bg-no-repeat bg-cover bg-center">
         <div class="container mx-auto px-3">
-            <div class="flex-wrap flex-row flex mx-[-12px]">
+            <div class="flex-wrap flex mx-[-12px]">
                 <div class="w-1/2 mt-[150px]">
                     <h2 class="text-white font-bold text-[96px] leading-[.99]">Accumsan ut orci vitae</h2>
                     <p class="font-normal text-[22px] text-white">Velit eget sit nibh fringilla risus ullamcorper
@@ -54,11 +54,13 @@
             </div>
         </div>
     </header>
-<!-- section2 -->
-    <!-- <div
-                class="p-5 border-[#454545] border  rounded-xl backdrop-blur-2xl relative before:content-[''] before:absolute before:inset-0 before:rounded-xl before:border before:border-transparent before:bg-[linear-gradient(95.21deg,_rgba(255,255,255,0.2)_-0.59%,_rgba(255,255,255,0.092)_106.99%)] before:[mask:linear-gradient(#000_0_0)_content-box,_linear-gradient(#000_0_0)] before:[mask-composite:exclude] text-white bg-black">
+    <!-- section2 -->
+    <section>
+        <div class="container mx-auto px-3 relative max-w-[1320px]">
+            <div class="p-6 border-[#454545] border rounded-xl backdrop-blur-2xl absolute  -top-[125px]">
                 <p class="font-semibold text-[48px] text-white">Cursus ligula habitant sed integer.</p>
-                <p class="font-normal text-lg text-[#B8B8B8] mt-6">Urna, dictum volutpat augue tortor. Fermentum
+                <p class="font-normal text-lg text-[#B8B8B8] mt-6 leading-[1.8] ">Urna, dictum volutpat augue tortor.
+                    Fermentum
                     vulputate convallis viverra facilisis. Aliquam
                     porttitor sem rhoncus
                     rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed. Cursus
@@ -76,14 +78,9 @@
                     imperdiet
                     tortor.
                     Volutpat nec vulputate diam tristique facilisi in turpis vel elit.</p>
-            </div> -->
-
-    <!-- section3 -->
-    <section class="mt-[60px]">
-        <div class="container mx-auto px-3">
-
-            <div class="flex flex-wrap flex-row mx-[-12px] ">
-                <div class="w-1/2 flex flex-col justify-center">
+            </div>
+            <div class="flex flex-wrap mx-[-12px] pt-[300px]">
+                <div class="w-1/2 flex flex-col justify-center max-w-[660px]">
                     <h2 class="font-semibold text-[48px] text-white">Cursus ligula habitant sed integer.</h2>
                     <p class="font-normal text-lg text-[#B8B8B8] mt-6">Urna, dictum volutpat augue tortor. Fermentum
                         vulputate convallis viverra facilisis. Aliquam porttitor sem rhoncus
@@ -102,54 +99,256 @@
             </div>
         </div>
     </section>
-    <!-- section4 -->
-    <section class="bg-[url()] min-vh-100 image-md-relative overflow d-flex items-center ">
-        <div class="container w-100">
-            <div class="row ">
-                <div class="col-12 col-lg-6 ">
-                    <div class="min-width max-md-width ml-30 mr-30">
-                        <h2 class="heading font-family mb-16 w-100">How to Buy</h2>
-                        <p class="description font-family w-660 mb-46 ">Urna, dictum volutpat augue tortor. Fermentum
-                            vulputate convallis viverra facilisis. Aliquam porttitor sem rhoncus
+    <!-- section3 -->
+    <section class="bg-[#1D1A1A] py-[88px] relative overflow-hidden">
+        <div class="container mx-auto px-3 ">
+            <div class="flex flex-wrap mx-[-12px]">
+                <div class="w-1/2 flex flex-col">
+                    <div>
+                        <p class="font-semibold text-[48px] leading-[1.28] text-white mb-6">
+                            How to Buy
+                        </p>
+                        <p class="font-normal text-[18px] leading-[1.8] text-[#BBBABA] mb-12">
+                            Urna, dictum volutpat augue tortor. Fermentum vulputate convallis viverra facilisis. Aliquam
+                            porttitor sem rhoncus
                             rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed.
                             Cursus donec porttitor fames
-                            tellus.</p>
-                        <div class="d-flex step items-center mb-16 ">
-                            <div class="circle">
-                                <p class="number font-family ">1</p>
+                            tellus.
+                        </p>
+                        <div>
+                            <div
+                                class="flex bg-[#151313] px-2 py-3 rounded-[43px] mb-4 cursor-pointer  hover:bg-[#0C0B0B] transition-all duration-200 group">
+                                <div
+                                    class="size-[71px] flex items-center justify-center mr-6 bg-white rounded-[50%] group-hover:bg-[linear-gradient(90deg,_#FFA800_0%,_#F06500_100%)] transition-colors duration-300">
+                                    <p
+                                        class="font-semibold text-[22px] leading-[1.5] group-hover:text-white transition-colors duration-100">
+                                        1
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-[22px] leading-[1.5] text-white">
+                                        Cras nunc libero ac
+                                    </p>
+                                    <p class="font-normal text-[18px] leading-[1.8] text-[#B6B5B5]">
+                                        Amet, integer et ultrices non viverra dolor dui
+                                    </p>
+                                </div>
                             </div>
-                            <div class="ml-23 ">
-                                <p class="text1 font-family ">Cras nunc libero ac</p>
-                                <p class="text2 font-family ">Amet, integer et ultrices non viverra dolor dui</p>
+                            <div
+                                class="flex bg-[#151313] px-2 py-3 rounded-[43px] mb-4 cursor-pointer  hover:bg-[#0C0B0B] transition-all duration-200 group">
+                                <div
+                                    class="size-[71px] flex items-center justify-center mr-6 bg-white rounded-[50%] group-hover:bg-[linear-gradient(90deg,_#FFA800_0%,_#F06500_100%)] transition-colors duration-300">
+                                    <p
+                                        class="font-semibold text-[22px] leading-[1.5] group-hover:text-white transition-colors duration-100">
+                                        2
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-[22px] leading-[1.5] text-white">
+                                        Cras nunc libero ac
+                                    </p>
+                                    <p class="font-normal text-[18px] leading-[1.8] text-[#B6B5B5]">
+                                        Amet, integer et ultrices non viverra dolor dui
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="d-flex step items-center mb-16">
-                            <div class="circle">
-                                <p class="number font-family">2</p>
-                            </div>
-                            <div class="ml-23">
-                                <p class="text1 font-family ">Cras nunc libero ac</p>
-                                <p class="text2 font-family ">Amet, integer et ultrices non viverra dolor dui</p>
-                            </div>
-                        </div>
-                        <div class="d-flex step items-center mb-16 ">
-                            <div class="circle">
-                                <p class="number font-family ">3</p>
-                            </div>
-                            <div class="ml-23">
-                                <p class="text1 font-family ">Cras nunc libero ac</p>
-                                <p class="text2 font-family ">Amet, integer et ultrices non viverra dolor dui</p>
+                            <div
+                                class="flex bg-[#151313] px-2 py-3 rounded-[43px] cursor-pointer  hover:bg-[#0C0B0B] transition-all duration-200 group">
+                                <div
+                                    class="size-[71px] flex items-center justify-center mr-6 bg-white rounded-[50%] group-hover:bg-[linear-gradient(90deg,_#FFA800_0%,_#F06500_100%)] transition-colors duration-300">
+                                    <p
+                                        class="font-semibold text-[22px] leading-[1.5] group-hover:text-white transition-colors duration-100">
+                                        3
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-[22px] leading-[1.5] text-white">
+                                        Cras nunc libero ac
+                                    </p>
+                                    <p class="font-normal text-[18px] leading-[1.8] text-[#B6B5B5]">
+                                        Amet, integer et ultrices non viverra dolor dui
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <img src="./assets/images/image.png" alt="image"
-                        class=" section-image image-md-absolute w-md-50 -translateY-md-50">
+                <div class="w-1/2 flex items-center">
+                    <img src="./assets/images/png/section3-img.png" alt="image " class="w-[55%] absolute right-[-8%]">
                 </div>
             </div>
         </div>
     </section>
+    <!-- section4 -->
+    <section class="pt-[62px] mb-[60px]">
+        <div class="container mx-auto px-3">
+            <h2 class="font-semibold text-[48px] text-center text-white mb-[32px]">Tokenomics</h2>
+            <div class="grid grid-cols-3 gap-[23px] mb-[26px]">
+                <div
+                    class="px-5 py-4  cursor-pointer backdrop-blur-[32px] border border-[#434242] rounded-[10px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)]">
+                    <p class="font-normal text-[22px] text-white mb-4">Liquidity</p>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8]">When Buying</p>
+                            <p
+                                class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                3-5%</p>
+                        </div>
+                        <div>
+                            <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8]">When Selling</p>
+                            <p
+                                class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                3-5%</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div
+                    class="px-5 py-4  cursor-pointer backdrop-blur-[32px] border border-[#434242] rounded-[10px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)]">
+                    <p class="font-normal text-[22px] text-white mb-4">Marketing</p>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8]">When Buying</p>
+                            <p
+                                class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                3-5%</p>
+                        </div>
+                        <div>
+                            <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8]">When Selling</p>
+                            <p
+                                class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                3-5%</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div
+                    class="px-5 py-4  cursor-pointer backdrop-blur-[32px] border border-[#434242] rounded-[10px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)]">
+                    <p class="font-normal text-[22px] text-white mb-4">Rewards</p>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8]">When Buying</p>
+                            <p
+                                class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                3-5%</p>
+                        </div>
+                        <div>
+                            <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8]">When Selling</p>
+                            <p
+                                class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                3-5%</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="p-[67px] border-t-[1px] border-x border-[#393838] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)] rounded-t-[10px]">
+                <div class="grid grid-cols-3 gap-5">
+                    <img src="./assets/images/svg/pie chart .svg" alt="image" class="cursor-pointer">
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="flex items-center mb-4">
+                            <div class="size-[50px] rounded-[4px] bg-[#00E396] cursor-pointer "></div>
+                            <p class="font-semibold text-[18px] text-white ml-6 ">Sed sem</p>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="size-[50px] rounded-[4px] bg-[#F06500] cursor-pointer "></div>
+                            <p class="font-semibold text-[18px] text-white ml-6">Sed sem</p>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="size-[50px] rounded-[4px] bg-[#8B35E2] cursor-pointer"></div>
+                            <p class="font-semibold text-[18px] text-white ml-6">Sed sem</p>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="size-[50px] rounded-[4px] bg-[#00B2FF] cursor-pointer"></div>
+                            <p class="font-semibold text-[18px] text-white ml-6">Sed sem</p>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="size-[50px] rounded-[4px] bg-[#00E396]  cursor-pointer"></div>
+                            <p class="font-semibold text-[18px] text-white ml-6">Sed sem</p>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="size-[50px] rounded-[4px] bg-[#FF4560]  cursor-pointer"></div>
+                            <p class="font-semibold text-[18px] text-white ml-6">Sed sem</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/png/section4-img.png" alt="image" class="cursor-pointer">
+                    </div>
+                </div>
+            </div>
+
+            <div class="overflow-x-auto rounded-b-[10px]">
+                <table class="w-[1255px] overflow-x-auto">
+                    <thead class="h-[60px]">
+                        <tr>
+                            <td></td>
+                            <td class="font-semibold text-[18px] text-white text-center">Token</td>
+                            <td class="font-semibold text-[18px] text-white text-center">Percentage</td>
+                            <td class="font-semibold text-[18px] text-white text-center">Token Price</td>
+                            <td class="font-semibold text-[18px] text-white text-center">Token Price</td>
+                            <td class="font-semibold text-[18px] text-white text-center">Total Amount</td>
+                        </tr>
+                    </thead>
+                    <tbody
+                        class="h-[350px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)] border-x border-b border-[#393838]">
+                        <tr>
+                            <td class="font-normal text-lg text-[white] text-center">Seddigq</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">1,00,000</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">58.3</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">10% Monthly</td>
+                        </tr>
+                        <tr>
+                            <td class="font-normal text-lg text-[white] text-center">Seddigq</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">1,00,000</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">58.3</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">10% Monthly</td>
+                        </tr>
+                        <tr>
+                            <td class="font-normal text-lg text-[white] text-center">Seddigq</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">1,00,000</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">58.3</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">10% Monthly</td>
+                        </tr>
+                        <tr>
+                            <td class="font-normal text-lg text-[white] text-center">Seddigq</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">1,00,000</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">58.3</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">10% Monthly</td>
+                        </tr>
+                        <tr>
+                            <td class="font-normal text-lg text-[white] text-center">Seddigq</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">1,00,000</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">58.3</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">10% Monthly</td>
+                        </tr>
+                        <tr>
+                            <td class="font-normal text-lg text-[white] text-center">Seddigq</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">1,00,000</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">58.3</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">12%</td>
+                            <td class="text-[#B8B8B8] ont-normal text-lg text-center">10% Monthly</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- section5 -->
+
+
+
 
     <script src="./assets/js/script.js"></script>
 </body>
