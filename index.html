@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saint Shiba</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" type="icon/x-icon" href="./assets/images/svg/logo.svg">
 </head>
 
 <body class="bg-[url(assets/images/png/bg-img-body.png)] bg-no-repeat bg-cover bg-center">
-
-    <!-- nav -->
-    <nav class="w-full bg-[#080402] p-5 fixed top-0 z-20">
-        <div class="container mx-auto px-3  ">
+    <!--nav -->
+    <nav class="w-full bg-[#080402] py-5 fixed top-0 z-20" data-aos="fade-down">
+        <div class="max-w-[1320px] mx-auto px-3">
             <div class="flex items-center justify-between">
-                <a href=""><img src="./assets/images/svg/logo.svg" alt="image"></a>
+                <a href=""><img src="./assets/images/svg/logo.svg" alt="image" class="hover:scale-105"></a>
                 <div class="flex items-center">
                     <div
-                        class="gap-8 flex menu-list lg:flex-row max-lg:flex-col max-lg:justify-center max-lg:h-full max-lg:w-[75%] max-lg:fixed max-lg:top-0 max-lg:-right-full z-10  transition-all max-lg:bg-[#F88900] ">
+                        class="gap-8 flex menu-list lg:flex-row max-lg:flex-col  max-lg:items-center max-lg:justify-center max-lg:h-full max-sm:w-full  max-lg:w-[75%] max-lg:fixed max-lg:top-0 max-lg:-right-full z-10  transition-all max-lg:bg-[#151414] ">
                         <a href="" class="text-white font-normal text-lg">Home</a>
                         <a href="" class="text-white font-normal text-lg">About</a>
                         <a href="" class="text-white font-normal text-lg">Tokenomics</a>
@@ -27,97 +27,103 @@
                         <a href="" class="text-white font-normal text-lg">FAQ</a>
                     </div>
                     <button
-                        class="text-white cursor-pointer font-semibold  ml-6 text-lg px-[23px] py-2 bg-gradient-to-r from-[#FFA800] to-[#F06500] rounded-3xl whitespace-nowrap">Connect
+                        class="text-white cursor-pointer font-semibold  lg:ml-6 ml-2 lg:text-lg sm:text-md text-sm sm:px-[23px] px-[9px] py-2 bg-gradient-to-r from-[#FFA800] to-[#F06500] rounded-3xl whitespace-nowrap hover:scale-110">Connect
                         Wallet</button>
                     <button
-                        class="menu-icon w-11 h-7 cursor-pointer flex z-30 justify-between flex-col ml-3 border-none lg:hidden"
+                        class="menu-icon sm:w-11 h-7 w-9  cursor-pointer flex z-30 justify-between flex-col sm:ml-3 ml-2 border-none lg:hidden"
                         onclick="menuIcon()">
                         <span class="w-full h-1 bg-white rounded transition duration-100 ease-linear"></span>
                         <span class="w-full h-1 bg-white rounded transition duration-100 ease-linear"></span>
                         <span class="w-full h-1 bg-white rounded transition duration-100 ease-linear"></span>
                     </button>
                 </div>
-
             </div>
         </div>
     </nav>
     <!-- header -->
-    <header class="bg-[url(assets/images/png/header-bg-img.png)] bg-no-repeat bg-cover bg-center pt-[140px]">
-        <div class="container mx-auto px-3">
-            <div class="flex-wrap flex mx-[-12px]">
-                <div class="w-1/2 mt-[150px] px-3">
-                    <h2 class="text-white font-bold text-[96px] leading-[.99]">Accumsan ut orci vitae</h2>
-                    <p class="font-normal text-[22px] text-white">Velit eget sit nibh fringilla risus ullamcorper
+    <header class="bg-[url(assets/images/png/header-bg-img.png)] bg-no-repeat bg-cover bg-center lg:pt-[140px]">
+        <div class="mx-auto px-3 max-w-[1320px]">
+            <div class="flex-wrap flex mx-[-12px] lg:flex-row flex-col-reverse lg:pt-0  pt-[125px]">
+                <div data-aos="fade-right" class="lg:w-1/2 w-full lg:mt-[150px] px-3">
+                    <p class="text-white font-bold xl:text-[96px] lg:text-[80px] text-[52px] leading-[.99]">Accumsan ut
+                        orci vitae</p>
+                    <p class="font-normal lg:text-[22px] text-[16px] text-white">Velit eget sit nibh fringilla risus
+                        ullamcorper
                         malesuada. Morbi nulla suscipit dolor, volutpat quam at urna donec
                         rutrum. In vulputate congue arcu in et.</p>
                     <button
-                        class="text-white cursor-pointer whitespace-nowrap font-semibold mt-[50px] text-lg px-[23px] py-2 bg-gradient-to-r from-[#FFA800] to-[#F06500] rounded-3xl">Connect
+                        class="text-white cursor-pointer whitespace-nowrap font-semibold mt-[50px] md:text-lg text-[16px] px-[23px] py-2 bg-gradient-to-r from-[#FFA800] to-[#F06500] rounded-3xl hover:scale-110">Connect
                         Wallet</button>
                 </div>
-                <div class="w-1/2 px-3 ">
-                    <img src="./assets/images/png/header-img.png" alt="image" class="w-full cursor-pointer">
+                <div class="lg:w-1/2 w-full px-3 ">
+                    <img src="./assets/images/png/header-img.png" alt="image"
+                        class="lg:w-full cursor-pointer sm:w-[50%] w-[80%] max-[1024px]:block max-lg:mx-auto"
+                        data-aos="fade-left">
                 </div>
             </div>
         </div>
     </header>
     <!-- section2 -->
-        <div class="container mx-auto px-3">
-            <div class="p-6 border-[#454545] border rounded-xl backdrop-blur-2xl translate-y-[-100px]">
-                <p class="font-semibold text-[48px] text-white">Cursus ligula habitant sed integer.</p>
-                <p class="font-normal text-lg text-[#B8B8B8] mt-6 leading-[1.8] ">Urna, dictum volutpat augue tortor.
-                    Fermentum
-                    vulputate convallis viverra facilisis. Aliquam
-                    porttitor sem rhoncus
-                    rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed. Cursus
-                    donec porttitor fames
-                    tellus. At ut donec nec aliquet ipsum leo tellus amet lacus. Varius mi urna blandit id magna tellus
-                    imperdiet tortor.
-                    Volutpat nec vulputate diam tristique facilisi in turpis vel elit.</p>
-                <p class="font-normal text-lg text-[#B8B8B8] mt-4">Urna, dictum volutpat augue tortor. Fermentum
-                    vulputate convallis viverra facilisis. Aliquam
-                    porttitor sem rhoncus
-                    rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed. Cursus
-                    donec porttitor
-                    fames
-                    tellus. At ut donec nec aliquet ipsum leo tellus amet lacus. Varius mi urna blandit id magna tellus
-                    imperdiet
-                    tortor.
-                    Volutpat nec vulputate diam tristique facilisi in turpis vel elit.</p>
-            </div>
+    <div data-aos="fade-up" class="max-w-[1320px] mx-auto px-3">
+        <div
+            class="p-6 border-[#454545] border rounded-xl backdrop-blur-2xl lg:translate-y-[-100px] translate-y-[30px] ">
+            <p class="font-semibold lg:text-[48px] text-[35px] text-white">Cursus ligula habitant sed integer.</p>
+            <p class="font-normal lg:text-lg text-[16px] text-[#B8B8B8] mt-6 leading-[1.8] ">Urna, dictum volutpat augue
+                tortor.
+                Fermentum
+                vulputate convallis viverra facilisis. Aliquam
+                porttitor sem rhoncus
+                rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed. Cursus
+                donec porttitor fames
+                tellus. At ut donec nec aliquet ipsum leo tellus amet lacus. Varius mi urna blandit id magna tellus
+                imperdiet tortor.
+                Volutpat nec vulputate diam tristique facilisi in turpis vel elit.</p>
+            <p class="font-normal lg:text-lg text-[16px] text-[#B8B8B8] mt-4">Urna, dictum volutpat augue tortor.
+                Fermentum
+                vulputate convallis viverra facilisis. Aliquam
+                porttitor sem rhoncus
+                rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed. Cursus
+                donec porttitor
+                fames
+                tellus. At ut donec nec aliquet ipsum leo tellus amet lacus. Varius mi urna blandit id magna tellus
+                imperdiet
+                tortor.
+                Volutpat nec vulputate diam tristique facilisi in turpis vel elit.</p>
         </div>
+    </div>
     <!-- section3 -->
-    <section>
-        <div class="container mx-auto px-3">
-            <div class="flex flex-wrap mx-[-12px] ">
-                <div class="w-1/2 flex flex-col justify-center max-w-[660px] px-3 ">
-                    <h2 class="font-semibold text-[48px] text-white">Cursus ligula habitant sed integer.</h2>
-                    <p class="font-normal text-lg text-[#B8B8B8] mt-6">Urna, dictum volutpat augue tortor. Fermentum
-                        vulputate convallis viverra facilisis. Aliquam porttitor sem rhoncus
-                        rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed.
-                        Cursus donec porttitor fames
-                        tellus.</p>
-                    <button
-                        class="text-white  max-w-[150px] whitespace-nowrap cursor-pointer font-semibold mt-[32px] text-lg px-[23px] py-2 bg-gradient-to-r from-[#FFA800] to-[#F06500] rounded-3xl ">Learn
-                        more
-                    </button>
-                </div>
-                <div class="w-1/2 px-3 ">
-                    <img src="./assets/images/png/section2-img.png" alt="image" class="w-full cursor-pointer">
-                </div>
-
+    <div data-aos="fade-up-right" class="max-w-[1320px] mx-auto px-3">
+        <div
+            class="flex flex-wrap mx-[-12px] gap-[30px] md:gap-0 md:flex-row flex-col-reverse pb-[30px] md:pb-0 lg:pt-0 pt-[75px]">
+            <div class="md:w-1/2 w-full  flex flex-col justify-center max-w-[660px] px-3 ">
+                <p class="font-semibold lg:text-[48px] text-[35px] text-white">Cursus ligula habitant sed integer.
+                </p>
+                <p class="font-normal lg:text-lg text-[16px] text-[#B8B8B8] mt-6">Urna, dictum volutpat augue
+                    tortor. Fermentum
+                    vulputate convallis viverra facilisis. Aliquam porttitor sem rhoncus
+                    rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed.
+                    Cursus donec porttitor fames
+                    tellus.</p>
+                <button
+                    class="text-white  max-w-[150px] whitespace-nowrap cursor-pointer font-semibold mt-[32px] text-lg px-[23px] py-2 bg-gradient-to-r from-[#FFA800] to-[#F06500] rounded-3xl hover:scale-110 ">Learn
+                    more
+                </button>
+            </div>
+            <div class="md:w-1/2 w-full px-3 ">
+                <img src="./assets/images/png/section2-img.png" alt="image" class="w-full cursor-pointer">
             </div>
         </div>
-    </section>
+    </div>
     <!-- section4 -->
-    <section class="bg-[#1D1A1A] py-[88px] relative overflow-hidden">
-        <div class="container mx-auto px-3 ">
-            <div class="flex flex-wrap mx-[-12px] gap-8">
+    <div class="bg-[#1D1A1A] py-[88px] relative overflow-hidden">
+        <div class="max-w-[1320px] mx-auto px-3 " data-aos="zoom-in-up">
+            <div class="flex flex-wrap mx-[-12px] gap-8 flex-col-reverse xl:flex-row">
                 <div class="xl:w-1/2 w-full flex flex-col px-3 ">
                     <div>
-                        <p class="font-semibold text-[48px] text-white mb-6 xl:text-start text-center">
+                        <p class="font-semibold lg:text-[48px] text-[40px] text-white mb-6 xl:text-start text-center">
                             How to Buy
                         </p>
-                        <p class="font-normal text-lg  text-[#BBBABA] mb-12 xl:text-start text-center">
+                        <p class="font-normal lg:text-lg text-[16px]  text-[#BBBABA] mb-12 xl:text-start text-center">
                             Urna, dictum volutpat augue tortor. Fermentum vulputate convallis viverra facilisis. Aliquam
                             porttitor sem rhoncus
                             rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed.
@@ -126,55 +132,55 @@
                         </p>
                         <div>
                             <div
-                                class="flex bg-[#151313] px-2 py-3 rounded-[43px] mb-4 cursor-pointer  hover:bg-[#0C0B0B] transition-all duration-200 group">
+                                class="flex items-center bg-[#151313] px-2 sm:py-3 py-2 rounded-[43px] mb-4 cursor-pointer  hover:bg-[#0C0B0B] transition-all duration-200 group">
                                 <div
-                                    class="size-[71px] flex items-center justify-center mr-6 bg-white rounded-[50%] group-hover:bg-[linear-gradient(90deg,_#FFA800_0%,_#F06500_100%)] transition-colors duration-300">
+                                    class="sm:size-[71px] size-[65px] shrink-0 flex items-center justify-center sm:mr-6 mr-4 bg-white rounded-[50%] group-hover:bg-[linear-gradient(90deg,_#FFA800_0%,_#F06500_100%)] transition-colors duration-300">
                                     <p
-                                        class="font-semibold text-[22px]  group-hover:text-white transition-colors duration-100">
+                                        class="font-semibold sm:text-[22px] text-[20px]  group-hover:text-white transition-colors duration-100">
                                         1
                                     </p>
                                 </div>
                                 <div>
-                                    <p class="font-semibold text-[22px]  text-white">
+                                    <p class="font-semibold sm:text-[22px] tet-[18px]  text-white whitespace-nowrap">
                                         Cras nunc libero ac
                                     </p>
-                                    <p class="font-normal text-lg text-[#B6B5B5]">
+                                    <p class="font-normal sm:text-lg text-[16px] text-[#B6B5B5]">
                                         Amet, integer et ultrices non viverra dolor dui
                                     </p>
                                 </div>
                             </div>
                             <div
-                                class="flex bg-[#151313]  px-2 py-3 rounded-[43px] mb-4 cursor-pointer  hover:bg-[#0C0B0B] transition-all duration-200 group">
+                                class="flex items-center bg-[#151313] px-2 sm:py-3 py-2 rounded-[43px] mb-4 cursor-pointer  hover:bg-[#0C0B0B] transition-all duration-200 group">
                                 <div
-                                    class="size-[71px] flex items-center justify-center mr-6 bg-white rounded-[50%] group-hover:bg-[linear-gradient(90deg,_#FFA800_0%,_#F06500_100%)] transition-colors duration-300">
+                                    class="sm:size-[71px] size-[65px] shrink-0 flex items-center justify-center sm:mr-6 mr-4 bg-white rounded-[50%] group-hover:bg-[linear-gradient(90deg,_#FFA800_0%,_#F06500_100%)] transition-colors duration-300">
                                     <p
-                                        class="font-semibold text-[22px]  group-hover:text-white transition-colors duration-100">
+                                        class="font-semibold sm:text-[22px] text-[20px]  group-hover:text-white transition-colors duration-100">
                                         2
                                     </p>
                                 </div>
                                 <div>
-                                    <p class="font-semibold text-[22px] text-white">
+                                    <p class="font-semibold sm:text-[22px] tet-[18px]  text-white whitespace-nowrap">
                                         Cras nunc libero ac
                                     </p>
-                                    <p class="font-normal text-lg  text-[#B6B5B5]">
+                                    <p class="font-normal sm:text-lg text-[16px] text-[#B6B5B5]">
                                         Amet, integer et ultrices non viverra dolor dui
                                     </p>
                                 </div>
                             </div>
                             <div
-                                class="flex bg-[#151313]  px-2 py-3 rounded-[43px] cursor-pointer  hover:bg-[#0C0B0B] transition-all duration-200 group">
+                                class="flex items-center bg-[#151313] px-2 sm:py-3 py-2 rounded-[43px] mb-4 cursor-pointer  hover:bg-[#0C0B0B] transition-all duration-200 group">
                                 <div
-                                    class="size-[71px] flex items-center justify-center mr-6 bg-white rounded-[50%] group-hover:bg-[linear-gradient(90deg,_#FFA800_0%,_#F06500_100%)] transition-colors duration-300">
+                                    class="sm:size-[71px] size-[65px] shrink-0 flex items-center justify-center sm:mr-6 mr-4 bg-white rounded-[50%] group-hover:bg-[linear-gradient(90deg,_#FFA800_0%,_#F06500_100%)] transition-colors duration-300">
                                     <p
-                                        class="font-semibold text-[22px]  group-hover:text-white transition-colors duration-100">
+                                        class="font-semibold sm:text-[22px] text-[20px]  group-hover:text-white transition-colors duration-100">
                                         3
                                     </p>
                                 </div>
                                 <div>
-                                    <p class="font-semibold text-[22px]  text-white">
+                                    <p class="font-semibold sm:text-[22px] tet-[18px]  text-white whitespace-nowrap">
                                         Cras nunc libero ac
                                     </p>
-                                    <p class="font-normal text-lg text-[#B6B5B5]">
+                                    <p class="font-normal sm:text-lg text-[16px] text-[#B6B5B5]">
                                         Amet, integer et ultrices non viverra dolor dui
                                     </p>
                                 </div>
@@ -182,19 +188,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="xl:w-1/2 w-full flex items-center px-3 ">
+                <div class="xl:w-1/2 w-full px-3">
                     <img src="./assets/images/png/section3-img.png" alt="image "
-                        class="xl:w-[55%] xl:absolute xl:right-[-8%] w-full">
+                        class="xl:w-[55%] xl:absolute xl:right-[-8%] xl:top-[50%] xl:translate-y-[-50%] w-full">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- section5 -->
-    <section class="pt-[62px] mb-[60px]">
-        <div class="container mx-auto px-3">
-            <h2 class="font-semibold text-[48px] text-center text-white mb-[32px]">Tokenomics</h2>
-            <div class="grid grid-cols-3 gap-[23px] mb-[26px]">
-                <div
+    <div class="pt-[62px] mb-[60px]">
+        <div class="max-w-[1320px] mx-auto px-3">
+            <p class="font-semibold lg:text-[48px] text-[38px] text-center text-white mb-[32px]" data-aos="fade-down">
+                Tokenomics</p>
+            <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-[23px] mb-[26px]">
+                <div data-aos="fade-right"
                     class="px-5 py-4  cursor-pointer backdrop-blur-[32px] border border-[#434242] rounded-[10px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)]">
                     <p class="font-normal text-[22px] text-white mb-4">Liquidity</p>
                     <div class="flex justify-between">
@@ -202,20 +209,19 @@
                             <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8] whitespace-nowrap">When Buying
                             </p>
                             <p
-                                class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                class="font-semibold lg:text-[28px] text-[25px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
                                 3-5%</p>
                         </div>
                         <div>
                             <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8] whitespace-nowrap">When Selling
                             </p>
                             <p
-                                class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                class="font-semibold lg:text-[28px] text-[25px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
                                 3-5%</p>
                         </div>
-                        <div></div>
                     </div>
                 </div>
-                <div
+                <div data-aos="fade-up"
                     class="px-5 py-4  cursor-pointer backdrop-blur-[32px] border border-[#434242] rounded-[10px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)]">
                     <p class="font-normal text-[22px] text-white mb-4">Marketing</p>
                     <div class="flex justify-between">
@@ -223,46 +229,47 @@
                             <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8] whitespace-nowrap">When Buying
                             </p>
                             <p
-                                class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                class="font-semibold lg:text-[28px] text-[25px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
                                 3-5%</p>
                         </div>
                         <div>
                             <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8] whitespace-nowrap">When Selling
                             </p>
                             <p
-                                class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                class="font-semibold lg:text-[28px] text-[25px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
                                 3-5%</p>
                         </div>
-                        <div></div>
                     </div>
                 </div>
-                <div
-                    class="px-5 py-4  cursor-pointer backdrop-blur-[32px] border border-[#434242] rounded-[10px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)]">
+                <div data-aos="fade-left"
+                    class="px-5 py-4  cursor-pointer backdrop-blur-[32px] border border-[#434242] rounded-[10px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)] max-lg:col-span-full max-lg:justify-self-center max-lg:w-1/2 max-sm:w-full">
                     <p class="font-normal text-[22px] text-white mb-4">Rewards</p>
                     <div class="flex justify-between">
                         <div>
                             <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8] whitespace-nowrap">When Buying
                             </p>
                             <p
-                                class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                class="font-semibold lg:text-[28px] text-[25px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
                                 3-5%</p>
                         </div>
                         <div>
                             <p class="font-normal text-sm text-[#B9B8B8] leading-[1.8] whitespace-nowrap">When Selling
                             </p>
                             <p
-                                class="font-semibold text-[28px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
+                                class="font-semibold lg:text-[28px] text-[25px] text-white leading[1.5] hover:text-[#F06500] cursor-pointer">
                                 3-5%</p>
                         </div>
-                        <div></div>
                     </div>
                 </div>
             </div>
             <div
-                class="p-[67px] border-t-[1px] border-x border-[#393838] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)] rounded-t-[10px]">
-                <div class="grid grid-cols-3 gap-5">
-                    <img src="./assets/images/svg/pie chart .svg" alt="image" class="cursor-pointer">
-                    <div class="flex flex-col items-center justify-center">
+                class="lg:p-[67px] p-[50px] border-t-[1px] border-x border-[#393838] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)] rounded-t-[10px]">
+                <div class="grid md:grid-cols-3  sm:grid-cols-2 gap-5">
+                    <div class="flex items-center justify-center">
+                        <img src="./assets/images/svg/piechart.svg" alt="image"
+                            class="cursor-pointer block mt-auto sm:mb-auto lg:mt-0 lg:mb-0" data-aos="zoom-in">
+                    </div>
+                    <div class="flex flex-col items-center justify-center" data-aos="zoom-in">
                         <div class="flex items-center mb-4">
                             <div class="size-[50px] rounded-[4px] bg-[#00E396] cursor-pointer "></div>
                             <p class="font-semibold text-[18px] text-white ml-6 ">Sed sem</p>
@@ -288,14 +295,14 @@
                             <p class="font-semibold text-[18px] text-white ml-6">Sed sem</p>
                         </div>
                     </div>
-                    <div>
-                        <img src="./assets/images/png/section4-img.png" alt="image" class="cursor-pointer">
+                    <div class="flex items-center justify-center">
+                        <img src="./assets/images/png/section4-img.png" alt="image"
+                            class="cursor-pointer block mt-auto sm:mb-auto lg:mt-0 lg:mb-0" data-aos="zoom-in">
                     </div>
                 </div>
             </div>
-
             <div class="overflow-x-auto rounded-b-[10px]">
-                <table class="w-[1255px] overflow-x-auto">
+                <table class="w-[1290px] overflow-x-auto" data-aos="zoom-in-down">
                     <thead class="h-[60px]">
                         <tr>
                             <td></td>
@@ -360,103 +367,103 @@
                 </table>
             </div>
         </div>
-    </section>
+    </div>
     <!-- section6 -->
     <div>
         <div class="mx-auto pt-[59px] mb-[73px]">
-            <p class="font-semibold  text-5xl text-center text-white  mb-14">
+            <p class="font-semibold  lg:text-5xl text-4xl text-center text-white  mb-14" data-aos="fade-down">
                 Roadmap
             </p>
-
             <div class=" mx-auto px-3">
                 <!-- timeline -->
                 <div
-                    class="timeline max-w-[1320px] mx-auto relative before:content-[''] before:absolute before:bg-[#FFF] before:top-0 before:bottom-0 before:left-1/2 before:w-[5px] ">
+                    class="timeline max-w-[1320px] mx-auto relative before:content-[''] before:absolute before:bg-[#FFF] before:top-[1px] before:bottom-[-1px] before:left-1/2 before:w-[5px] max-md:before:left-[30px]">
                     <!--   left card -->
-                    <div class="w-1/2  pb-3 pr-[95px] relative left-0">
+                    <div class="md:w-1/2 w-[90%] md:pb-3 pb-4 md:pr-[95px] max-md:pl-[80px] relative left-0">
+                        <!-- circle -->
+                        <div
+                            class="absolute rounded-full size-9 bg-gradient-to-b from-[#FFA800] to-[#F06500] top-0 right-[-20px] max-md:left-[15px] ">
+                        </div>
                         <!-- box -->
-                        <div class="max-w-[287px] ml-auto">
-                            <p class="font-semibold text-4xl  text-white text-right mb-2">
+                        <div class="md:max-w-[287px] md:ml-auto w-[90%]" data-aos="fade-up">
+                            <p class="font-semibold md:text-4xl text-3xl text-white md:text-right mb-2">
                                 Phase-1
                             </p>
 
-                            <p class="font-normal  text-[#B6B5B5] text-lg  text-right">
+                            <p class="font-normal  text-[#B6B5B5] md:text-lg text-md md:text-right  ">
                                 Massa pellentesque sagittis
-                                Aliquam sed in odio.<br>Turpis blandit at interdum<br>Eget tempus nulla tempus arcu.
+                                Aliquam sed in odio. Turpis blandit at interdum Eget tempus nulla tempus arcu.
                             </p>
-                        </div>
-                        <!-- circle -->
-                        <div
-                            class="absolute rounded-full size-9 bg-gradient-to-b from-[#FFA800] to-[#F06500] top-0 right-[-20px]">
                         </div>
                     </div>
                     <!--right card -->
-                    <div class="w-1/2 pl-[95px] pb-3 relative left-[50%]">
-                        <!-- box -->
-                        <div class="max-w-[287px]">
-                            <p class="font-semibold text-4xl  text-white text-left mb-2">
-                                Phase-2
-                            </p>
-
-                            <p class="font-normal text-lg  text-[#B6B5B5] text-left">
-                                Massa pellentesque sagittisAliquam sed in odio.<br>
-                                Turpis blandit at interdum<br>Eget tempus nulla tempus arcu.
-                            </p>
-                        </div>
+                    <div
+                        class="md:w-1/2 w-[90%] md:pl-[95px] pl-[50px] md:pb-3 pb-4 relative left-[50%] max-md:left-[30px]">
                         <!-- circle -->
                         <div
                             class="absolute size-9 rounded-full bg-gradient-to-b from-[#FFA800] to-[#F06500] top-0 -left-[16px]">
                         </div>
+                        <!-- box -->
+                        <div class="md:max-w-[287px] w-[90%]" data-aos="fade-up">
+                            <p class="font-semibold md:text-4xl text-3xl  text-white text-left mb-2">
+                                Phase-2
+                            </p>
+
+                            <p class="font-normal md:text-lg text-md  text-[#B6B5B5] text-left">
+                                Massa pellentesque sagittisAliquam sed in odio.
+                                Turpis blandit at interdum Eget tempus nulla tempus arcu.
+                            </p>
+                        </div>
                     </div>
                     <!-- left-card -->
-                    <div class="w-1/2 pr-[95px] pb-3 relative left-0">
+                    <div class="md:w-1/2 w-[90%] md:pb-3 pb-4 md:pr-[95px] max-md:pl-[80px] relative left-0">
+                        <!-- circle -->
+                        <div
+                            class="absolute rounded-full size-9 bg-gradient-to-b from-[#FFA800] to-[#F06500] top-0 right-[-20px] max-md:left-[15px] ">
+                        </div>
                         <!-- box -->
-                        <div class="max-w-[287px] ml-auto">
-                            <p class="font-semibold text-4xl  text-white text-right mb-2">
+                        <div class="md:max-w-[287px] md:ml-auto w-[90%]" data-aos="fade-up">
+                            <p class="font-semibold md:text-4xl text-3xl text-white md:text-right mb-2">
                                 Phase-3
                             </p>
 
-                            <p class="font-normal text-lg text-[#B6B5B5] text-right">
-                                Massa pellentesque sagittisAliquam sed in odio.<br>
-                                Turpis blandit at interdum<br>Eget tempus nulla tempus arcu.
+                            <p class="font-normal  text-[#B6B5B5] md:text-lg text-md md:text-right  ">
+                                Massa pellentesque sagittis
+                                Aliquam sed in odio. Turpis blandit at interdum Eget tempus nulla tempus arcu.
                             </p>
-                        </div>
-                        <!-- circle -->
-                        <div
-                            class="absolute size-9 rounded-full bg-gradient-to-b from-[#FFA800] to-[#F06500] top-0 -right-[20px]">
                         </div>
                     </div>
                 </div>
                 <!-- right-card -->
-                <div class="w-1/2 pl-[95px] pb-3 relative left-[50%]">
-                    <!-- box -->
-                    <div class="max-w-[287px]">
-                        <p class="font-semibold text-4xl text-white text-left mb-2">
-                            Phase-4
-                        </p>
-
-                        <p class="font-normal text-lg text-[#B6B5B5] text-left">
-                            Massa pellentesque sagittisAliquam sed in odio.<br>Turpis blandit at interdum<br>Eget tempus
-                            nulla tempus arcu.
-                        </p>
-                    </div>
+                <div
+                    class="md:w-1/2 w-[90%] md:pl-[95px] pl-[50px] md:pb-3 pb-4 relative left-[50%] max-md:left-[30px]">
                     <!-- circle -->
                     <div
                         class="absolute size-9 rounded-full bg-gradient-to-b from-[#FFA800] to-[#F06500] top-0 -left-[16px]">
+                    </div>
+                    <!-- box -->
+                    <div class="md:max-w-[287px] w-[90%] " data-aos="fade-up">
+                        <p class="font-semibold md:text-4xl text-3xl text-white text-left mb-2">
+                            Phase-4
+                        </p>
+
+                        <p class="font-normal md:text-lg text-md text-[#B6B5B5] text-left">
+                            Massa pellentesque sagittisAliquam sed in odio.Turpis blandit at interdum Eget tempus
+                            nulla tempus arcu.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- section7 -->
-    <div class="container mx-auto px-3 pb-[256px]">
-        <h2 class="text-[48px] font-semibold text-white text-center mb-8">FAQ</h2>
+    <div class="max-w-[1320px] mx-auto px-3 lg:pb-[256px] pb-[180px]" data-aos="zoom-in-up">
+        <p class="lg:text-[48px] text-[40px] font-semibold text-white text-center mb-8">FAQ</p>
         <div class="w-full gap-2 flex flex-col  mx-auto cursor-pointer">
             <div class="accordion-item group mx-auto sm:p-8 p-4 cursor-pointer border-[#474646]  border rounded-[10px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)]"
                 id="item1">
                 <button
-                    class="accordion-header flex justify-between  items-center w-full transition-all cursor-pointer font-semibold text-[22px] text-[white] text-start gap-3"
+                    class="accordion-header flex justify-between  items-center w-full transition-all cursor-pointer font-semibold lg:text-[22px] text-[18px] text-[white] text-start gap-3"
                     onclick="toggleAccordion('#item1')">
                     Volutpat consequat dictumst vel donec.
                     <img src="./assets/images/svg/arrow.svg" alt="arrow"
@@ -464,7 +471,7 @@
                 </button>
                 <div
                     class="accordion-content overflow-hidden max-h-0 transition-[max-height,padding] duration-500 ease-in-out group-[.active]:max-h-[500px] ">
-                    <p class="font-normal text-[18px] text-[#B8B8B8] mt-6">
+                    <p class="font-normal lg:text-[18px] text-[16px] text-[#B8B8B8] mt-6">
                         Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet
                         ullamcorper quis
                         felis at
@@ -481,7 +488,7 @@
             <div class="accordion-item group mx-auto sm:p-8 p-4 cursor-pointer border-[#474646]  border rounded-[10px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)]"
                 id="item2">
                 <button
-                    class="accordion-header flex justify-between  items-center w-full transition-all cursor-pointer font-semibold text-[22px] text-[white] text-start gap-3"
+                    class="accordion-header flex justify-between  items-center w-full transition-all cursor-pointer font-semibold lg:text-[22px] text-[18px] text-[white] text-start gap-3"
                     onclick="toggleAccordion('#item2')">
                     Volutpat consequat dictumst vel donec.
                     <img src="./assets/images/svg/arrow.svg" alt="arrow"
@@ -489,7 +496,7 @@
                 </button>
                 <div
                     class="accordion-content overflow-hidden max-h-0 transition-[max-height,padding] duration-500 ease-in-out group-[.active]:max-h-[500px]">
-                    <p class="font-normal text-[18px] text-[#B8B8B8] mt-6">
+                    <p class="font-normal lg:text-[18px] text-[16px] text-[#B8B8B8] mt-6">
                         Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet
                         ullamcorper quis
                         felis at
@@ -506,7 +513,7 @@
             <div class="accordion-item group mx-auto sm:p-8 p-4 cursor-pointer border-[#474646]  border rounded-[10px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)]"
                 id="item3">
                 <button
-                    class="accordion-header flex justify-between  items-center w-full transition-all cursor-pointer font-semibold text-[22px] text-[white] text-start gap-3"
+                    class="accordion-header flex justify-between  items-center w-full transition-all cursor-pointer font-semibold lg:text-[22px] text-[18px] text-[white] text-start gap-3"
                     onclick="toggleAccordion('#item3')">
                     Volutpat consequat dictumst vel donec.
                     <img src="./assets/images/svg/arrow.svg" alt="arrow"
@@ -514,7 +521,7 @@
                 </button>
                 <div
                     class="accordion-content overflow-hidden max-h-0 transition-[max-height,padding] duration-500 ease-in-out group-[.active]:max-h-[500px]">
-                    <p class="font-normal text-[18px] text-[#B8B8B8] mt-6">
+                    <p class="font-normal lg:text-[18px] text-[16px] text-[#B8B8B8] mt-6">
                         Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet
                         ullamcorper quis
                         felis at
@@ -531,7 +538,7 @@
             <div class="accordion-item group mx-auto sm:p-8 p-4 cursor-pointer border-[#474646]  border rounded-[10px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)]"
                 id="item4">
                 <button
-                    class="accordion-header flex justify-between  items-center w-full transition-all cursor-pointer font-semibold text-[22px] text-[white] text-start gap-3"
+                    class="accordion-header flex justify-between  items-center w-full transition-all cursor-pointer font-semibold lg:text-[22px] text-[18px] text-[white] text-start gap-3"
                     onclick="toggleAccordion('#item4')">
                     Volutpat consequat dictumst vel donec.
                     <img src="./assets/images/svg/arrow.svg" alt="arrow"
@@ -539,7 +546,7 @@
                 </button>
                 <div
                     class="accordion-content overflow-hidden max-h-0 transition-[max-height,padding] duration-500 ease-in-out group-[.active]:max-h-[500px]">
-                    <p class="font-normal text-[18px] text-[#B8B8B8] mt-6">
+                    <p class="font-normal lg:text-[18px] text-[16px] text-[#B8B8B8] mt-6">
                         Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet
                         ullamcorper quis
                         felis at
@@ -556,7 +563,7 @@
             <div class="accordion-item group mx-auto sm:p-8 p-4 cursor-pointer border-[#474646]  border rounded-[10px] bg-[linear-gradient(94.88deg,rgba(255,255,255,0.1)_0.97%,rgba(255,255,255,0)_103.14%)]"
                 id="item5">
                 <button
-                    class="accordion-header flex justify-between  items-center w-full transition-all cursor-pointer font-semibold text-[22px] text-[white] text-start gap-3"
+                    class="accordion-header flex justify-between  items-center w-full transition-all cursor-pointer font-semibold lg:text-[22px] text-[18px] text-[white] text-start gap-3"
                     onclick="toggleAccordion('#item5')">
                     Volutpat consequat dictumst vel donec.
                     <img src="./assets/images/svg/arrow.svg" alt="arrow"
@@ -564,7 +571,7 @@
                 </button>
                 <div
                     class="accordion-content overflow-hidden max-h-0 transition-[max-height,padding] duration-500 ease-in-out group-[.active]:max-h-[500px]">
-                    <p class="font-normal text-[18px] text-[#B8B8B8] mt-6">
+                    <p class="font-normal lg:text-[18px] text-[16px] text-[#B8B8B8] mt-6">
                         Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet
                         ullamcorper quis
                         felis at
@@ -582,6 +589,14 @@
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+
+        });
+    </script>
 </body>
 
 </html>

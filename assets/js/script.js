@@ -1,5 +1,4 @@
 // accordion
- 
 function toggleAccordion(selector) {
     const clickedItem = document.querySelector(selector);
     const allItems = document.querySelectorAll('.accordion-item');
@@ -14,14 +13,14 @@ function toggleAccordion(selector) {
 }
 
 // nav bar
-    window.onscroll = function () {
-        var nav = document.querySelector("nav");
-        if (window.scrollY > 1) { // Adjust scroll trigger
-            nav.classList.add("scrolled");
-        } else {
-            nav.classList.remove("scrolled");
-        }
-    };
+window.onscroll = function () {
+    var nav = document.querySelector("nav");
+    if (window.scrollY > 1) { // Adjust scroll trigger
+        nav.classList.add("scrolled");
+    } else {
+        nav.classList.remove("scrolled");
+    }
+};
 
 
 function menuIcon() {
